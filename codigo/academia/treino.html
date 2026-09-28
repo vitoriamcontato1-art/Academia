@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Academia Power - Treinos</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="treino.css">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+>
+
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     MENU SUPERIOR
+========================== -->
+
+<header class="navbar">
+
+    <div class="logo">
+
+        <i class="fa-solid fa-dumbbell"></i>
+
+        <span>
+            ACADEMIA <strong>POWER</strong>
+        </span>
+
+    </div>
+
+
+    <nav>
+
+        <a href="cadastro.html">
+
+            <i class="fa-regular fa-user"></i>
+            Alunos
+
+        </a>
+
+
+        <a href="treino.html" class="menu-ativo">
+
+            <i class="fa-solid fa-dumbbell"></i>
+            Treinos
+
+        </a>
+
+
+        <a href="planos.html">
+
+            <i class="fa-regular fa-calendar"></i>
+            Planos
+
+        </a>
+
+    </nav>
+
+
+    <div class="administrador">
+
+        <i class="fa-regular fa-bell"></i>
+
+        <span>
+            Administrador
+        </span>
+
+    </div>
+
+</header>
+
+
+    <!-- =========================
+         CONTEÚDO
+    ========================== -->
+
+    <main class="container">
+
+
+        <h1>
+            Cadastro <span>de Treino</span>
+        </h1>
+
+
+
+        <form id="formTreino">
+
+
+            <!-- =========================
+                 DADOS DO TREINO
+            ========================== -->
+
+            <section class="card">
+
+                <h2 class="titulo-section">
+
+                    🏋️ Dados do Treino
+
+                </h2>
+
+
+                <div class="form-grid">
+
+
+                    <!-- ALUNO -->
+
+                    <div class="campo">
+
+                        <label for="aluno">
+                            Aluno
+                        </label>
+
+                        <select id="aluno" required>
+
+                            <option value="">
+                                Selecione o aluno
+                            </option>
+
+                            <option>
+                                João da Silva
+                            </option>
+
+                            <option>
+                                Maria Santos
+                            </option>
+
+                            <option>
+                                Pedro Oliveira
+                            </option>
+
+                            <option>
+                                Ana Souza
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- PROFESSOR -->
+
+                    <div class="campo">
+
+                        <label for="professor">
+                            Professor
+                        </label>
+
+                        <select id="professor" required>
+
+                            <option value="">
+                                Selecione o professor
+                            </option>
+
+                            <option>
+                                João Silva
+                            </option>
+
+                            <option>
+                                Marcos Oliveira
+                            </option>
+
+                            <option>
+                                Camila Santos
+                            </option>
+
+                            <option>
+                                Fernanda Souza
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- NOME DO TREINO -->
+
+                    <div class="campo">
+
+                        <label for="nomeTreino">
+                            Nome do Treino
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nomeTreino"
+                            placeholder="Ex: Treino A - Peito e Tríceps"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- TIPO DE TREINO -->
+
+                    <div class="campo">
+
+                        <label for="tipoTreino">
+                            Tipo de Treino
+                        </label>
+
+                        <select id="tipoTreino" required>
+
+                            <option value="">
+                                Selecione
+                            </option>
+
+                            <option>
+                                Hipertrofia
+                            </option>
+
+                            <option>
+                                Emagrecimento
+                            </option>
+
+                            <option>
+                                Resistência
+                            </option>
+
+                            <option>
+                                Força
+                            </option>
+
+                            <option>
+                                Condicionamento
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- OBSERVAÇÕES -->
+
+                    <div class="campo coluna-2">
+
+                        <label for="observacoes">
+                            Observações (opcional)
+                        </label>
+
+                        <textarea
+                            id="observacoes"
+                            placeholder="Observações adicionais (opcional)"
+                        ></textarea>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =========================
+                 EXERCÍCIOS
+            ========================== -->
+
+            <section class="card">
+
+                <h2 class="titulo-section">
+
+                    💪 Exercícios do Treino
+
+                </h2>
+
+
+
+                <div class="form-grid">
+
+
+                    <!-- EXERCÍCIO -->
+
+                    <div class="campo coluna-2">
+
+                        <label for="exercicio">
+                            Exercício
+                        </label>
+
+                        <select id="exercicio">
+
+                            <option value="">
+                                Selecione o exercício
+                            </option>
+
+                            <option>
+                                Supino Reto
+                            </option>
+
+                            <option>
+                                Supino Inclinado
+                            </option>
+
+                            <option>
+                                Agachamento
+                            </option>
+
+                            <option>
+                                Leg Press
+                            </option>
+
+                            <option>
+                                Puxada Frontal
+                            </option>
+
+                            <option>
+                                Remada Baixa
+                            </option>
+
+                            <option>
+                                Rosca Direta
+                            </option>
+
+                            <option>
+                                Tríceps Pulley
+                            </option>
+
+                            <option>
+                                Elevação Lateral
+                            </option>
+
+                            <option>
+                                Abdominal
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- SÉRIES -->
+
+                    <div class="campo">
+```

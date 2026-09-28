@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Power Fitness - Login</title>s
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="login-page">
+        <div class="overlay"></div>
+        <div class="stars">
+            <span class="star star-1">⭐</span>
+            <span class="star star-2">⭐</span>
+            <span class="star star-3">⭐</span>
+            <span class="star star-4">⭐</span>
+            <span class="star star-5">⭐</span>
+            <span class="star star-6">⭐</span>
+            <span class="star star-7">⭐</span>
+            <span class="star star-8">⭐</span>
+            <span class="star star-9">⭐</span>
+            <span class="star star-10">⭐</span>
+        </div>
+        <header class="header">
+
+            <div class="logo">
+                <span>🏋️‍♂️</span>
+            </div>
+
+            <h1>POWER FITNESS</h1>
+
+        </header>
+        <section class="login-card">
+
+            <h2>Login</h2>
+
+            <form id="loginForm">
+
+                <div class="input-group">
+                    <label for="usuario">Usuário</label>
+
+                    <input
+                        type="text"
+                        id="usuario"
+                        name="usuario"
+                        autocomplete="username"
+                        required
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label for="senha">Senha</label>
+
+                    <input
+                        type="password"
+                        id="senha"
+                        name="senha"
+                        autocomplete="current-password"
+                        required
+                    >
+                </div>
+
+                <button type="submit" class="btn-login">
+                    Entrar
+                </button>
+
+            </form>
+            <div class="divider">
+                <span></span>
+                <small>ou</small>
+                <span></span>
+            </div>
+            <button class="btn-register" id="registerButton">
+                Cadastrar
+            </button>
+
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

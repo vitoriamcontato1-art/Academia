@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Academia Power - Renovações</title>
+
+    <link rel="stylesheet" href="renovacoes.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+    <div class="logo">
+
+        <i class="fa-solid fa-dumbbell"></i>
+
+        <span>
+            ACADEMIA <strong>POWER</strong>
+        </span>
+
+    </div>
+
+
+    <nav>
+
+        <a href="cadastro.html">
+
+            <i class="fa-regular fa-user"></i>
+
+            <span>Alunos</span>
+
+        </a>
+
+
+        <a href="instrutores.html">
+
+            <i class="fa-solid fa-person-chalkboard"></i>
+
+            <span>Instrutores</span>
+
+        </a>
+
+
+        <a href="planos.html">
+
+            <i class="fa-regular fa-calendar"></i>
+
+            <span>Planos</span>
+
+        </a>
+
+
+        <a href="treino.html">
+
+            <i class="fa-solid fa-dumbbell"></i>
+
+            <span>Treinos</span>
+
+        </a>
+
+
+        <a href="exercicios.html">
+
+            <i class="fa-solid fa-person-running"></i>
+
+            <span>Exercícios</span>
+
+        </a>
+
+
+        <a href="renovacoes.html" class="menu-ativo">
+
+            <i class="fa-solid fa-rotate"></i>
+
+            <span>Renovações</span>
+
+        </a>
+
+    </nav>
+
+
+    <div class="administrador">
+
+        <i class="fa-regular fa-bell"></i>
+
+        <span>
+            Administrador
+        </span>
+
+    </div>
+
+</header>
+
+
+<main class="container">
+
+
+    <!-- =================================
+         TOPO
+    ================================== -->
+
+    <div class="topo">
+
+        <div>
+
+            <h1>
+                Gestão Inteligente de
+                <span>Renovações</span>
+            </h1>
+
+            <p>
+                Acompanhe os planos próximos do vencimento e entre em contato com os alunos.
+            </p>
+
+        </div>
+
+
+        <div class="alerta-topo">
+
+            <i class="fa-solid fa-bell"></i>
+
+            <span>
+                Renovações pendentes
+            </span>
+
+            <strong id="contadorTopo">
+                3
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <!-- =================================
+         CARDS
+    ================================== -->
+
+    <section class="resumo">
+
+
+        <div class="resumo-card destaque">
+
+            <div class="icone">
+
+                <i class="fa-solid fa-bell"></i>
+
+            </div>
+
+            <div>
+
+                <span>
+                    Próximos do vencimento
+                </span>
+
+                <strong id="totalPendentes">
+                    3
+                </strong>
+
+                <small>
+                    Precisam de atenção
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <div class="resumo-card">
+
+            <div class="icone vermelho">
+
+                <i class="fa-solid fa-triangle-exclamation"></i>
+
+            </div>
+
+            <div>
+
+                <span>
+                    Planos vencidos
+                </span>
+
+                <strong id="totalVencidos">
+                    1
+                </strong>
+
+                <small>
+                    Aguardando renovação
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <div class="resumo-card">
+
+            <div class="icone verde">
+
+                <i class="fa-solid fa-circle-check"></i>
+
+            </div>
+
+            <div>
+
+                <span>
+                    Renovações realizadas
+                </span>
+
+                <strong id="totalRealizadas">
+                    18
+                </strong>
+
+                <small>
+                    Neste período
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <div class="resumo-card">
+
+            <div class="icone azul">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+            </div>
+
+            <div>
+
+                <span>
+                    Taxa de renovação
+                </span>
+
+                <strong>
+                    86%
+                </strong>
+
+                <small>
+                    Últimos 30 dias
+                </small>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================
+         ALERTA
+    ================================== -->
+
+    <section class="alerta">
+
+        <div class="alerta-icone">
+
+            <i class="fa-solid fa-bell"></i>
+
+        </div>
+
+
+        <div>
+
+            <strong>
+                Atenção: existem planos próximos do vencimento
+            </strong>
+
+            <p>
+                Entre em contato com os alunos para aumentar as chances de renovação.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================
+         FILTROS
+    ================================== -->
+
+    <section class="filtros">
+
+        <div class="pesquisa">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                id="pesquisa"
+                placeholder="Pesquisar aluno..."
+            >
+
+        </div>
+
+
+        <select id="filtroStatus">
+
+            <option value="">
+                Todos os status
+            </option>
+
+            <option value="Urgente">
+                Urgente
+            </option>
+
+            <option value="Próximo">
+                Próximo do vencimento
+            </option>
+
+            <option value="Vencido">
+                Vencido
+            </option>
+
+        </select>
+
+    </section>
+
+
+    <!-- =================================
+         LISTA
+    ================================== -->
+
+    <section class="card">
+
+        <div class="cabecalho">
+
+            <span>Aluno</span>
+
+            <span>Plano</span>
+
+            <span>Vencimento</span>
+
+            <span>Contato</span>
+
+            <span>Status</span>
+
+            <span>Ações</span>
+
+        </div>
+
+
+        <div id="listaRenovacoes"></div>
+
+    </section>
+
+
+</main>
+
+
+<!-- =================================
+     MODAL CONTATO
+================================== -->
+
+<div class="modal" id="modalContato">
+
+    <div class="modal-conteudo">
+
+        <div class="modal-topo">
+
+            <h2>
+                Contato com o aluno
+            </h2>
+
+            <button
+                type="button"
+                class="fechar"
+                id="fecharModal"
+            >
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+
+        <div class="dados-contato">
+
+            <div class="contato-avatar" id="avatarContato">
+                JS
+            </div>
+
+
+            <div>
+
+                <strong id="nomeContato">
+                    João Silva
+                </strong>
+
+                <span id="planoContato">
+                    Plano Mensal
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="opcoes-contato">
+
+            <button
+                type="button"
+                id="btnTelefone"
+            >
+
+                <i class="fa-solid fa-phone"></i>
+
+                <span>
+                    Ligar
+                </span>
+
+            </button>
+
+
+            <button
+                type="button"
+                id="btnEmail"
+            >
+
+                <i class="fa-regular fa-envelope"></i>
+
+                <span>
+                    E-mail
+                </span>
+
+            </button>
+
+        </div>
+
+
+        <div class="telefone-modal">
+
+            <span>
+                Telefone:
+            </span>
+
+            <strong id="telefoneContato">
+                (31) 99999-9999
+            </strong>
+
+            <span>
+                E-mail:
+            </span>
+
+            <strong id="emailContato">
+                aluno@email.com
+            </strong>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="renovacoes.js"></script>
+
+</body>
+</html>
